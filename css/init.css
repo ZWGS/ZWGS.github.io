@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;  
+    color: black;
+}
+
+input{
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+}
+/*左浮动*/
+.l-float{
+    float: left;
+}
+/*右浮动*/
+.r-float{
+    float: right;
+}
+/*清除浮动*/
+.clearFix{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*文字居中*/
+.txt-center{
+    text-align: center;
+}
