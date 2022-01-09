@@ -22,7 +22,8 @@ ul,ol{
     float: right;
 }
 /*清除浮动*/
-.clearFix{
+.clearFix::after,
+.clearFix::before{
     content: "";
     clear: both;
     display: block;
