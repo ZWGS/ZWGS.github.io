@@ -21,13 +21,13 @@
 }
 #navfirst li{
     float: left;
-    
+
 }
 #navfirst li a{
     display: inline-block;
     height: 48px;
     line-height: 48px;
-    width: 200px;
+    width: 240px;
     background: #e8e7e3;
     text-align: center;
     font-size: 25px;
@@ -35,7 +35,8 @@
     color: #777777;
 
 }
-#navfirst a:hover{
+#navfirst a:hover,
+#navfirst .clickThis{
     background:rgb(54, 54, 54) ;
     color: rgb(218, 218, 218);
 }
@@ -52,41 +53,69 @@
     line-height: 35px;
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: #777777;
     background: #e8e7e3;
 }
 #body-index ul{
-    padding: 10px;
+    padding: 10px 0;
 }
 /*navsecond*/
 #navsecond{
     width: 180px;
-    height: 200px;
     box-sizing:border-box;
     margin-left: -100%;
     border: 1px solid #e8e7e3;
     background: rgb(255, 252, 247);
 }
+#navsecond a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    font-weight: 400;
+
+
+}
+#navsecond a:hover,
+#navsecond .clickThis{
+    background:#777777 ;
+    color: rgb(218, 218, 218);
+}
 /*maincontent*/
 #maincontent{
-    height: 200px; 
     width: 100%;
     box-sizing:border-box;
     padding: 10px;
-    background: rgb(244, 255, 221);
+    border: 1px solid #e8e7e3;
 }
 #maincontent .content{
-    margin-left: 180px;
+    margin:0 180px;
 }
 /*sidebar*/
 #sidebar{
     width: 180px;
-    height: 200px;
     box-sizing:border-box;
     margin-left: -180px;
-    background: rgb(255, 233, 230);
+    border: 1px solid #e8e7e3;
     
+}
+#sidebar ul li{
+    padding: 0 10px;
+}
+#sidebar ul li::before,
+#sidebar ul li::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#sidebar ul li div:nth-child(1){
+    float: left;
+}
+#sidebar ul li div:nth-child(2){
+    float: right;
 }
 /*footer*/
 #footer{
